@@ -236,7 +236,6 @@
 .todays_deals_container {
     margin: 15px;
 }
-
 .todays_deals_container .todays_deals {
     display: flex;
     width: 100%;
@@ -256,4 +255,35 @@
 .todays_deals_container .todays_deals h4 {
     font-size: 14px;
     color: #eee;
+}
+.box_container{
+    display: flex;
+    gap: 20px;
+    width: 50%;
+    height: 5%;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+.box_container .box_item{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 500px;
+    /* gap: 20px; */
+    align-items: center;
+    border: 1px solid red;
+}
+.box_container .box_item img{
+    width: 30%;
+}
+.box_container .box_item .box_item_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.box_container .box_item .box_item_price {
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }

@@ -7,7 +7,7 @@
 .header_container {
     background-color: #f8f9fa;
     height: 600px;
-    /* border: #94004f 5px solid; */
+    position: static;
 }
 .other_logo {
     height: 35px;
@@ -29,7 +29,6 @@
 }
 .header_logo .left_logo img{
     width: 50%;
-    /* margin-left: 20px; */
 }
 .header_logo .search_container{
     display: flex;
@@ -256,25 +255,27 @@
     font-size: 14px;
     color: #eee;
 }
-.box_container{
+body .box_container{
     display: flex;
     gap: 20px;
-    width: 50%;
-    height: 5%;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
 }
 .box_container .box_item{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 500px;
-    /* gap: 20px; */
+    width: 395px;
     align-items: center;
-    border: 1px solid red;
+    padding: 20px;
+    /* border: 1px solid red; */
 }
+.box_container .box_item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
 .box_container .box_item img{
-    width: 30%;
+    width: 28%;
 }
 .box_container .box_item .box_item_details {
     display: flex;
@@ -285,5 +286,28 @@
 .box_container .box_item .box_item_price {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
+}
+.box_container .box_item .box_item_details .box_item_price .discount{
+    font-size: 14px;
+    color: #9d9b9c;
+    text-decoration: line-through;
+}
+.box_container .box_item .box_item_details .box_item_price .precentage {
+    font-size: 12px;
+    background-color: #ffd8d8;
+    color: red;
+    padding: 2px 3px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+}
+.box_container .box_item .box_item_details .save {
+    font-size: 12px;
+    color: #589f80;
+    font-weight: bold;
+}
+.Sponsored_products .sponsored_products_title {
+    width: 100%;
+    margin-bottom: 10px;
 }

@@ -307,7 +307,23 @@ body .box_container{
     color: #589f80;
     font-weight: bold;
 }
-.Sponsored_products .sponsored_products_title {
+
+.Sponsored_products .sliding_product {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.Sponsored_products .sliding_product .box_item {
+    margin: 10px;
+    height: 320px;
+    padding: 0 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.Sponsored_products .sliding_product .box_item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+.Sponsored_products .sliding_product .box_item img {
     width: 100%;
-    margin-bottom: 10px;
+    height: 6cm;
 }

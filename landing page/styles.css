@@ -270,4 +270,47 @@ form .submit button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+}
+.footer-bar1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-bar1 span {
+    color: #2995e2;
+}
+.footer-bar1 .footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2995e2;
+    gap: 20px;
+}
+
+.footer-bar .footer-bar2{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 80px;
+}
+.footer-bar .footer-bar2 p{
+    padding: 6px 0;
+    margin-right: 20px;
+}
+.footer-low {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.footer-low2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer-low2 h4 {
+    color: #2995e2;
 }
